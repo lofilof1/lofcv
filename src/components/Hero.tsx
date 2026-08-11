@@ -11,16 +11,16 @@ export default function Hero() {
         <p className="hero-lead">{t.hero.subtitle}</p>
         <div className="hero-actions">
           <a className="button" href="#experience">{t.hero.primaryCta}<ArrowDownRight size={18} /></a>
-          <a className="text-link" href="#contact">{t.hero.secondaryCta}<ArrowRight size={17} /></a>
+          <a className="text-link" href="/iletisim">{t.hero.secondaryCta}<ArrowRight size={17} /></a>
         </div>
       </div>
       <aside className="hero-card reveal delay-1" aria-label="Profile card">
-        <div className="monogram">EL</div>
+        <img className="profile-photo" src="/profile/emre-lofca.jpg" alt="Emre Lofça" width="140" height="140" />
         <div className="hero-card-copy">
           <p className="profile-name">Emre Lofça</p>
-          <p>Automation · Analytics<br />Digital transformation</p>
+          <p>{t.hero.role}<br />{t.hero.focus}</p>
         </div>
-        <a href="mailto:emrelofca@gmail.com" className="round-link" aria-label="Send email"><Mail size={20} /></a>
+        <a href="/iletisim" className="round-link" aria-label={t.hero.secondaryCta}><Mail size={20} /></a>
         <div className="availability"><span />{t.hero.available}</div>
       </aside>
     </div>

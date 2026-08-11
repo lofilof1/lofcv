@@ -9,24 +9,87 @@ npm.cmd install
 npm.cmd run dev
 ```
 
-## Üretim
+## Raspberry Pi üzerinde Docker ile yayınlama
 
-```powershell
-npm.cmd run build
-npm.cmd run preview
+Bu kurulum iki konteyner kullanır:
+
+- `web`: Statik siteyi port `8080` üzerinden sunan Nginx.
+- `cloudflared`: Nginx'e yalnızca Docker ağı içinden bağlanan Cloudflare Tunnel.
+
+Galeri dosyaları `public/media/` altında yalnızca Pi'de tutulur. Bu klasör Git ve
+Docker imajı dışında bırakılır; Nginx konteynerine salt-okunur bağlanır. Bu nedenle
+`git pull` galeri dosyalarını silmez veya değiştirmez.
+
+Pi'nin modeminde port açılması gerekmez. Compose dosyasında host portu da yayınlanmaz.
+
+### İlk kurulum
+
+Docker ve Git kurulduktan sonra projeyi Pi'ye alın:
+
+```bash
+git clone <REPO_ADRESI> ~/emre-cv
+cd ~/emre-cv
+mkdir -p deploy/secrets
+chmod 700 deploy/secrets
 ```
 
-Yayınlanacak statik dosyalar `dist` klasöründe oluşur.
+Cloudflare panelinde yeni/yenilenmiş tunnel tokenını alın. Tokenı sohbete, Git'e veya
+komut geçmişine eklemeyin. Yalnızca Pi üzerindeki şu dosyaya yapıştırın:
 
-## Raspberry Pi ve güvenlik
+```bash
+nano deploy/secrets/cloudflare-tunnel-token.txt
+chmod 600 deploy/secrets/cloudflare-tunnel-token.txt
+```
 
-1. `dist` klasörünü Pi üzerindeki `/var/www/emre-cv/dist` dizinine kopyalayın.
-2. `deploy/nginx-cv.conf` dosyasını Nginx site yapılandırması olarak kullanın.
-3. Dosyadaki `server_name` ve `root` değerlerini kendi sisteminize göre düzenleyin.
-4. İnternete açık yayında HTTPS için Certbot gibi bir ACME istemcisi kullanın.
-5. SSH ve yönetim servislerini doğrudan internete açmayın; anahtar tabanlı giriş,
-   güvenlik duvarı, düzenli güncelleme ve yedekleme kullanın.
+Dosyada yalnızca token bulunmalıdır. Ardından sistemi başlatın:
 
-Örnek Nginx ayarları CSP, clickjacking, MIME sniffing, referrer ve tarayıcı izinleri
-için güvenlik başlıklarını içerir. Site iletişim formu veya sunucu tarafı kod
-çalıştırmadığı için saldırı yüzeyi sınırlıdır.
+```bash
+docker compose up -d --build
+docker compose ps
+docker compose logs --tail=100 cloudflared
+```
+
+Cloudflare Tunnel panelindeki Public Hostname kayıtları:
+
+| Hostname | Service |
+| --- | --- |
+| `lofca.com.tr` | `http://web:8080` |
+| `www.lofca.com.tr` | `http://web:8080` |
+
+### Siteyi güncelleme
+
+Pi'de bir kez Git hook'unu etkinleştirin:
+
+```bash
+git config core.hooksPath deploy/git-hooks
+chmod +x deploy/git-hooks/post-merge deploy/rebuild-site.sh deploy/update-site.sh
+```
+
+Artık normal bir pull, değişiklik geldiyse Nginx imajını otomatik yeniler:
+
+```bash
+cd ~/emre-cv
+git pull --ff-only
+```
+
+Alternatif olarak `bash deploy/update-site.sh` aynı pull işlemini yapar. `post-merge`
+hook'u yalnızca web imajını yeniden oluşturur ve Nginx konteynerini yeniler. Tunnel
+çalışmaya devam eder; `public/media/` klasörüne dokunulmaz.
+
+### Kontrol ve bakım
+
+```bash
+docker compose ps
+docker compose logs --tail=100 web
+docker compose logs --tail=100 cloudflared
+docker compose pull cloudflared
+docker compose up -d cloudflared
+```
+
+Token dosyası `deploy/secrets/` altında tutulur ve Git tarafından yok sayılır.
+SSH servisini internete açmayın; Pi ve Docker güncellemelerini düzenli uygulayın.
+
+## Docker kullanmadan alternatif kurulum
+
+`deploy/nginx-cv.conf`, Nginx'i doğrudan Raspberry Pi OS üzerinde çalıştırmak için
+hazırlanmış alternatif yapılandırmadır. Docker kurulumu kullanılırken buna gerek yoktur.

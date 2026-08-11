@@ -1,0 +1,13 @@
+node_modules
+dist
+public/media
+media
+.git
+.agents
+.codex
+.vscode
+deploy/secrets
+*.log
+README.md
+cv.md
+generate-pdf.cjs

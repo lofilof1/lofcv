@@ -1,0 +1,42 @@
+name: emre-cv
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: emre-cv-web:local
+    restart: unless-stopped
+    expose:
+      - "8080"
+    volumes:
+      - ./public/media:/usr/share/nginx/html/media:ro
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    user: "1000:1000"
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --protocol http2 run --token-file /run/secrets/tunnel_token
+    depends_on:
+      web:
+        condition: service_healthy
+    secrets:
+      - tunnel_token
+    security_opt:
+      - no-new-privileges:true
+
+secrets:
+  tunnel_token:
+    file: ./deploy/secrets/cloudflare-tunnel-token.txt

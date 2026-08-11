@@ -10,6 +10,5 @@ export default function About() {
     <div className="container stats-grid">
       {t.about.stats.map((stat) => <div className="stat" key={stat.label}><strong>{stat.value}</strong><span>{stat.label}</span></div>)}
     </div>
-    <div className="container personal-facts"><span>{t.about.personalTitle}</span><div>{t.about.personal.map((item) => <small key={item}>{item}</small>)}</div></div>
   </section>;
 }
