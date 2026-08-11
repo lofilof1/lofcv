@@ -235,3 +235,14 @@ html[data-theme='light'] footer a { color: var(--ink); }
   .gallery-card { min-height: 360px; }
   footer .container { grid-template-columns: 1fr auto; } footer .container span:nth-child(2) { display: none; }
 }
+
+/* Sports Page Styles */
+.active-filter { background: var(--ink) !important; color: #fff !important; border-color: var(--ink) !important; }
+html[data-theme='dark'] .active-filter { background: var(--mint) !important; color: var(--ink) !important; border-color: var(--mint) !important; }
+.outline-filter { background: transparent !important; border: 1px solid var(--line-light) !important; color: var(--ink) !important; }
+html[data-theme='dark'] .outline-filter { border-color: var(--line-light) !important; color: #fff !important; }
+.sports-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+.sports-card:hover .sports-card-badge { transform: scale(1.15); }
+html[data-theme='dark'] .sports-card { background: #202c27 !important; border-color: var(--line-light) !important; }
+html[data-theme='dark'] .sports-card h3 { color: #fff !important; }
+

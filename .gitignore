@@ -12,6 +12,13 @@ dist
 dist-ssr
 *.local
 
+# Gallery media stays on the Raspberry Pi and local development machines
+/media/
+/public/media/
+
+# Local deployment secrets
+deploy/secrets/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
