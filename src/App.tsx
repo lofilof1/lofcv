@@ -5,7 +5,6 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Hobbies from './components/Hobbies';
 import Sports from './components/Sports';
-import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import './index.css';
 
@@ -14,8 +13,11 @@ function CareerPage() { return <><Hero /><About /><Experience /></>; }
 function CurrentPage() {
   const path = window.location.pathname.replace(/\/$/, '') || '/';
   if (path === '/hobiler') return <Hobbies />;
+  if (path === '/galeri') {
+    window.location.replace('/spor');
+    return null;
+  }
   if (path === '/spor' || path === '/sportif') return <Sports />;
-  if (path === '/galeri') return <Gallery />;
   if (path === '/iletisim') return <Contact />;
   return <CareerPage />;
 }

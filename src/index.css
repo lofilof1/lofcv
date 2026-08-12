@@ -14,6 +14,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body { margin: 0; background: var(--ink); color: #fff; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 button, a { font: inherit; }
 a { color: inherit; text-decoration: none; }
 button { color: inherit; }
@@ -151,19 +152,27 @@ button { color: inherit; }
 .gallery-tag { color: var(--muted-light); font-size: 10px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
 .gallery-content h3 { margin: auto 0 16px; font-size: clamp(21px,2vw,27px); font-weight: 500; line-height: 1.2; letter-spacing: -.025em; }
 .gallery-content p { margin: 0; color: var(--muted-light); font-size: 14px; line-height: 1.75; }
-.photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
-.photo-card { margin: 0; min-height: 420px; display: grid; grid-template-rows: 1fr auto; background: #e8e6e0; overflow: hidden; }
-.photo-card.photo-wide { grid-column: span 2; min-height: 470px; }
-.photo-art { min-height: 290px; position: relative; display: grid; place-items: center; color: rgba(20,37,31,.7); background: var(--mint); overflow: hidden; }
-.photo-art::before, .photo-art::after, .photo-art i { content: ''; position: absolute; border: 1px solid rgba(20,37,31,.15); border-radius: 50%; }
-.photo-art::before { width: 280px; height: 280px; }
-.photo-art::after { width: 390px; height: 390px; }
-.photo-art i { width: 500px; height: 500px; }
-.photo-art > svg { position: relative; z-index: 1; }
-.photo-art > span { position: absolute; left: 24px; top: 20px; z-index: 1; font-size: 10px; letter-spacing: .14em; }
-.photo-card figcaption { padding: 23px 25px 25px; }
-.photo-card figcaption strong { font-size: 18px; font-weight: 500; }
-.photo-card figcaption p { margin: 7px 0 0; color: var(--muted-light); font-size: 13px; }
+.sports-page { overflow: hidden; padding-bottom: clamp(70px,8vw,105px); }
+.sports-gallery-toolbar { display: flex; align-items: center; gap: 20px; margin-bottom: 22px; }
+.sports-gallery-line { height: 1px; flex: 1; background: var(--line-light); }
+.sports-gallery-controls { display: flex; gap: 8px; }
+.sports-gallery-arrow { width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border: 1px solid var(--line-light); border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; transition: background .2s ease, color .2s ease, transform .2s ease; }
+.sports-gallery-arrow:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
+.sports-gallery-arrow:focus-visible, .sports-media-trigger:focus-visible, .sports-lightbox-close:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.sports-gallery-track { display: flex; gap: 16px; overflow-x: auto; padding: 4px max(24px, calc((100vw - var(--container)) / 2)) 22px; scroll-padding-inline: max(24px, calc((100vw - var(--container)) / 2)); scroll-snap-type: x mandatory; scroll-behavior: smooth; overscroll-behavior-inline: contain; scrollbar-width: none; }
+.sports-gallery-track::-webkit-scrollbar { display: none; }
+.sports-media-trigger { position: relative; flex: 0 0 clamp(270px,32vw,410px); height: clamp(360px,55vh,560px); padding: 0; border: 0; border-radius: 10px; overflow: hidden; background: #0d1512; cursor: zoom-in; scroll-snap-align: start; box-shadow: 0 14px 35px rgba(20,37,31,.09); }
+.sports-media-trigger.sports-media-wide { flex-basis: clamp(410px,52vw,680px); }
+.sports-media-trigger::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 58%, rgba(6,12,10,.3)); pointer-events: none; opacity: .7; transition: opacity .3s ease; }
+.sports-media-trigger img, .sports-media-trigger video { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .45s cubic-bezier(.2,.7,.2,1), filter .3s ease; }
+.sports-media-trigger:hover img, .sports-media-trigger:hover video { transform: scale(1.025); filter: saturate(1.05); }
+.sports-media-trigger:hover::after { opacity: 1; }
+.sports-play-indicator { position: absolute; z-index: 1; left: 18px; bottom: 18px; width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; color: var(--ink); background: rgba(255,255,255,.88); backdrop-filter: blur(10px); box-shadow: 0 5px 18px rgba(0,0,0,.2); }
+.sports-play-indicator svg { margin-left: 2px; }
+.sports-lightbox { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: clamp(18px,4vw,48px); background: rgba(7,13,11,.94); backdrop-filter: blur(18px); }
+.sports-lightbox-media { width: min(1100px,100%); height: min(78svh,760px); display: grid; place-items: center; }
+.sports-lightbox-media img, .sports-lightbox-media video { display: block; max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: 0 30px 70px rgba(0,0,0,.4); }
+.sports-lightbox-close { position: fixed; top: 24px; right: 24px; z-index: 1; width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; color: #fff; background: rgba(0,0,0,.35); cursor: pointer; }
 
 .contact-section { padding: clamp(75px,9vw,110px) 0; background: #26342f; color: #fff; }
 .contact-section.inner-page { padding-top: 155px; display: flex; align-items: center; }
@@ -192,7 +201,8 @@ html[data-theme='dark'] .eyebrow.dark, html[data-theme='dark'] .section-light .s
 html[data-theme='dark'] .about-copy p, html[data-theme='dark'] .gallery-content p, html[data-theme='dark'] .gallery-tag, html[data-theme='dark'] .stat span { color: #a8b2ae; }
 html[data-theme='dark'] .gallery-card { background: #202c27; }
 html[data-theme='dark'] .gallery-visual { color: var(--ink); }
-html[data-theme='dark'] .photo-card { background: #202c27; }
+html[data-theme='dark'] .sports-gallery-arrow { color: #fff; }
+html[data-theme='dark'] .sports-gallery-arrow:hover { background: var(--mint); color: var(--ink); }
 
 html[data-theme='light'] {
   --paper: #f3f1ec;
@@ -254,7 +264,6 @@ html[data-theme='light'] footer a { color: var(--ink); }
   .about-copy { padding-top: 0; }
   .career-aside { border: 0; border-top: 1px solid var(--line-dark); padding: 45px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
   .gallery-card { min-height: 350px; }
-  .photo-card.photo-wide { grid-column: auto; }
   .modern-job.job { grid-template-columns: 85px 130px minmax(0, 1fr); gap: 25px; }
   .modern-job .job-body ul { grid-template-columns: 1fr; }
   .company-logo { width: 130px; height: 74px; }
@@ -287,17 +296,10 @@ html[data-theme='light'] footer a { color: var(--ink); }
   .education-card { flex-direction: column; gap: 12px; }
   .career-aside { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
-  .photo-grid { grid-template-columns: 1fr; }
   .gallery-card { min-height: 360px; }
+  .sports-gallery-track { padding-inline: 16px; scroll-padding-inline: 16px; gap: 12px; }
+  .sports-media-trigger, .sports-media-trigger.sports-media-wide { flex-basis: min(86vw,390px); height: min(62svh,520px); }
+  .sports-gallery-toolbar { margin-bottom: 16px; }
+  .sports-lightbox-close { top: 16px; right: 16px; }
   footer .container { grid-template-columns: 1fr auto; } footer .container span:nth-child(2) { display: none; }
 }
-
-/* Sports Page Styles */
-.active-filter { background: var(--ink) !important; color: #fff !important; border-color: var(--ink) !important; }
-html[data-theme='dark'] .active-filter { background: var(--mint) !important; color: var(--ink) !important; border-color: var(--mint) !important; }
-.outline-filter { background: transparent !important; border: 1px solid var(--line-light) !important; color: var(--ink) !important; }
-html[data-theme='dark'] .outline-filter { border-color: var(--line-light) !important; color: #fff !important; }
-.sports-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
-.sports-card:hover .sports-card-badge { transform: scale(1.15); }
-html[data-theme='dark'] .sports-card { background: #202c27 !important; border-color: var(--line-light) !important; }
-html[data-theme='dark'] .sports-card h3 { color: #fff !important; }

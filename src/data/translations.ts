@@ -1,6 +1,6 @@
 export const translations = {
   tr: {
-    nav: { career: 'Kariyer', hobbies: 'Hobiler', sports: 'Spor & Medya', gallery: 'Galeri', contact: 'İletişim', downloadCV: 'CV indir' },
+    nav: { career: 'Kariyer', hobbies: 'Hobiler', sports: 'Spor & Medya', contact: 'İletişim', downloadCV: 'CV indir' },
     hero: {
       eyebrow: 'Bilgisayar Mühendisi · Kıdemli Uzman',
       title: 'Merhaba, ben Emre.',
@@ -82,20 +82,11 @@ export const translations = {
         { id: 8, type: 'video', category: 'sports', title: 'Maç İçi Mücadele', tag: 'Spor & Rekabet', src: '/media/YJGJ7540.MP4', caption: 'Saha içi maç aksiyonu ve spor disiplini.' },
       ],
     },
-    gallery: {
-      eyebrow: 'Galeri', title: 'Uğraşlarımdan küçük kareler', desc: 'Donanım, sunucu, spor ve yapay zekâ tarafında ilgilendiğim konulardan bir seçki.',
-      items: [
-        { number: '01', type: 'hardware', title: 'Sistem toplama', caption: 'Sistem kurulumları, overclock, undervolt ve soğutma çalışmaları.' },
-        { number: '02', type: 'server', title: 'Ev sunucusu', caption: 'Raspberry Pi, Linux ve self-hosted servis çalışmaları.' },
-        { number: '03', type: 'sports', title: 'Spor anıları', caption: 'Turnuvalar, takım oyunları ve smaç yarışmasından anlar.' },
-        { number: '04', type: 'ai', title: 'Yapay zekâ çalışmaları', caption: 'Yerel modeller ve Langflow ile hazırladığım küçük uygulamalar.' },
-      ],
-    },
     contact: { eyebrow: 'İletişim', title: 'Tanışmak istersen buradayım.', desc: 'Otomasyon, veri, teknoloji veya ortak ilgi alanlarımız üzerine konuşmak için bana ulaşabilirsin.', email: 'E-posta gönder', linkedin: 'LinkedIn’de bağlan' },
     footer: 'Bilgisayar Mühendisi · Veri, Süreç & Yapay Zekâ',
   },
   en: {
-    nav: { career: 'Career', hobbies: 'Hobbies', sports: 'Sports & Media', gallery: 'Gallery', contact: 'Contact', downloadCV: 'Download CV' },
+    nav: { career: 'Career', hobbies: 'Hobbies', sports: 'Sports & Media', contact: 'Contact', downloadCV: 'Download CV' },
     hero: {
       eyebrow: 'Computer Engineer · Senior Specialist',
       title: 'Hi, I’m Emre.',
@@ -175,15 +166,6 @@ export const translations = {
         { id: 6, type: 'image', category: 'referee', title: 'Refereeing & On-Field Duty', tag: 'TFF Refereeing', src: '/media/IMG-20161115-WA0024.jpg', caption: 'Memory from officiating in the amateur leagues for the Turkish Football Federation.' },
         { id: 7, type: 'video', category: 'dunk', title: 'Dunk Practice & Athletics', tag: 'Basketball', src: '/media/DKFB0267.MP4', caption: 'Athletic practice session and dunk attempts.' },
         { id: 8, type: 'video', category: 'sports', title: 'On-Field Action', tag: 'Sports & Competition', src: '/media/YJGJ7540.MP4', caption: 'Match action and athletic discipline on the field.' },
-      ],
-    },
-    gallery: {
-      eyebrow: 'Gallery', title: 'A few frames from my interests', desc: 'A small selection from the hardware, servers, sports and artificial intelligence topics I explore.',
-      items: [
-        { number: '01', type: 'hardware', title: 'System builds', caption: 'System builds, overclocking, undervolting and cooling work.' },
-        { number: '02', type: 'server', title: 'Home server', caption: 'Work with Raspberry Pi, Linux and self-hosted services.' },
-        { number: '03', type: 'sports', title: 'Sports memories', caption: 'Moments from tournaments, team sports and the slam dunk contest.' },
-        { number: '04', type: 'ai', title: 'AI work', caption: 'Small applications built with local models and Langflow.' },
       ],
     },
     contact: { eyebrow: 'Contact', title: 'Feel free to say hello.', desc: 'You can reach out for a chat about automation, data, technology or any interests we share.', email: 'Send an email', linkedin: 'Connect on LinkedIn' },

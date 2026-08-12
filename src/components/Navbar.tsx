@@ -38,7 +38,6 @@ export default function Navbar() {
         <a href="/" className={path === '/' ? 'active' : ''} onClick={close}>{t.nav.career}</a>
         <a href="/hobiler" className={path === '/hobiler' ? 'active' : ''} onClick={close}>{t.nav.hobbies}</a>
         <a href="/spor" className={path === '/spor' ? 'active' : ''} onClick={close}>{t.nav.sports}</a>
-        <a href="/galeri" className={path === '/galeri' ? 'active' : ''} onClick={close}>{t.nav.gallery}</a>
         <a href="/iletisim" className={path === '/iletisim' ? 'active' : ''} onClick={close}>{t.nav.contact}</a>
         <div className="nav-actions">
           <button className="theme-switch" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} aria-label={theme === 'dark' ? 'Açık moda geç' : 'Koyu moda geç'}>
