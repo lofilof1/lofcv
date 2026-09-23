@@ -6,26 +6,30 @@ a { color: #3498db; text-decoration: none; }
 
 # EMRE LOFÇA
 ## BİLGİSAYAR MÜHENDİSİ
-**Telefon:** +90 542 336 37 14 | **E-posta:** emrelofca@gmail.com | **LinkedIn:** [linkedin.com/in/e-lofca](https://www.linkedin.com/in/e-lofca)
+**E-posta:** emrelofca@gmail.com | **LinkedIn:** [linkedin.com/in/e-lofca](https://www.linkedin.com/in/e-lofca)
 
 ---
 
 ### HAKKIMDA
-Dijital dönüşüm projelerinde deneyimli, Otomasyon, İş Analitiği ve Veri Görselleştirme alanlarında uzman bir Bilgisayar Mühendisiyim. Canias ERP yönetimi ve ürün maliyetlendirme süreçlerindeki tecrübemi, teknik altyapı bilgimle birleştirerek işletme verimliliğini artırıyorum. Özellikle TPM metodolojileri konusundaki yetkinliklerimle, şirket hedeflerine ulaşmada hem teknik hem de operasyonel liderlik yapmaktayım.
+Saha otomasyonu, iş analitiği, veri görselleştirme ve yapay zekâ altyapıları üzerine çalışan bir Bilgisayar Mühendisiyim. Canias ERP yönetimi, saha verilerinin ERP'ye aktarımı ve ürün maliyetlendirme süreçlerindeki deneyimimi teknik altyapı bilgimle birleştiriyorum. SIRI dijital olgunluk ölçümleri ve TPM metodolojileri çerçevesinde ekipler arası koordinasyona katkı sağlıyorum.
 
-Ayrıca 200'den fazla bilgisayar kasası toplama tecrübem, kendi Raspberry Pi sunucum üzerinden yerel yapay zeka ve Langflow uygulamaları geliştirme deneyimim bulunuyor. Takım sporlarında aktif olarak yer alıyorum; spor turnuvalarına katıldım ve bir smaç yarışması birinciliğim var.
+Ayrıca 200'den fazla özel sistem toplama tecrübem, ince BIOS voltaj/frekans sweet spot optimizasyonlarım, kendi Raspberry Pi sunucum üzerinden yerel yapay zekâ, RAG ve Langflow uygulamaları denemelerim bulunuyor. Takım sporlarında aktif olarak yer alıyor; basketbol smaç yarışması birinciliği gibi güzel anılar taşıyorum.
 
 ---
 
 ### İŞ DENEYİMİ
-**OTOMASYON MÜHENDİSİ / İŞ ANALİSTİ** - *YÜNSA A.Ş./TEKİRDAĞ* (2021-Halen)
-* Canias ERP üzerinde ürün maliyetlendirme süreçlerini yöneterek operasyonel karlılık analizleri gerçekleştirdim.
-* Tableau platformunda 300'den fazla rapor geliştirerek süreç optimizasyonunu ve veri görselleştirmeyi yönettim.
-* MES ve ERP entegrasyonlarını sağlayarak otomasyon verilerinin sisteme akışını optimize ettim ve üretim verimliliğini artırdım.
-* FI (Focused Improvement) Komitesi'nde aktif rol alarak TPM metodolojileriyle operasyonel iyileştirme projelerine liderlik ettim.
+**KİDEMLİ UZMAN** - *AKKİM KİMYA* (Şubat 2026-Halen)
+* İş birimlerinin analitik ihtiyaçlarına yönelik Tableau üzerinde dashboard ve raporlama çözümleri geliştiriyorum.
+* Süreç iyileştirme, Linux tabanlı NVIDIA GPU sunucu altyapıları, yerel LLM ve chatbot uygulamaları üzerinde çalışıyorum.
+
+**OTOMASYON MÜHENDİSİ / İŞ ANALİSTİ** - *YÜNSA A.Ş./TEKİRDAĞ* (2021-2026)
+* Canias ERP üzerinde ürün maliyetlendirme süreçlerini takip ederek kârlılık analizleri gerçekleştirdim.
+* Tableau platformunda 300'den fazla rapor hazırlayarak veri görselleştirme ihtiyaçlarını karşıladım.
+* MES ve ERP entegrasyonlarını sağlayarak otomasyon verilerinin (iş emirleri ve sipariş numaraları) sisteme akışını düzenledim.
+* SIRI dijital olgunluk ölçümlerinde görev aldım ve FI (Focused Improvement) Komitesi'nde operasyonel verimlilik çalışmalarına katıldım.
 
 **FUTBOL HAKEMİ** - *TÜRKİYE FUTBOL FEDERASYONU/DÜZCE* (2018-2019)
-* Amatör ligde futbol hakemliği
+* Amatör lig karşılaşmalarında hakemlik
 
 ---
 
@@ -35,8 +39,8 @@ Ayrıca 200'den fazla bilgisayar kasası toplama tecrübem, kendi Raspberry Pi s
 ---
 
 ### BECERİLER
-* **Teknik:** Python, T-SQL, Canias ERP, Tableau, RFID, Otomasyon, MES, Yapay Zeka, Linux & Raspberry Pi Sunucu Yönetimi, Langflow.
-* **Kişisel/Diğer:** Ekip Liderliği, Veri Analizi ve Görselleştirme, İş Analizi, TPM, Hakemlik.
+* **Teknik:** Python, T-SQL, Canias ERP, Tableau, RFID, Otomasyon, MES, Yapay Zekâ / On-Premise LLM, Linux & Raspberry Pi Sunucu Yönetimi, Langflow.
+* **Kişisel/Diğer:** Süreç Analizi, Veri Görselleştirme, İş Analizi, TPM FI Komitesi, SIRI Dijital Olgunluk, Hakemlik.
 
 ---
 
@@ -45,11 +49,11 @@ Ayrıca 200'den fazla bilgisayar kasası toplama tecrübem, kendi Raspberry Pi s
 * **BUREAU VERITAS** - ISO 27001 Bilgi Güvenliği Yönetim Sistemi İç Denetçi (2022)
 * **ACADEMY PEAK** - İş Analitiği (2021)
 * **İİENSTİTÜ** - Liderlik Eğitimi (2021)
-* **İİENSTİTÜ** - Yaratıcı ve Tasarım Odaklı Düşünme (2021)
+* **İİENSTİTÜ** - Yaratıcı ve Tasarım Odaklı Düşünce (2021)
 
 ---
 
 ### KİŞİSEL BİLGİLER
 * **Ehliyet:** B Sınıfı
 * **Askerlik:** Yapıldı
-* **Diller:** İngilizce (B1+)
+* **Diller:** İngilizce (B1)

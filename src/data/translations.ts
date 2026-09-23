@@ -4,7 +4,7 @@ export const translations = {
     hero: {
       eyebrow: 'Bilgisayar Mühendisi · Kıdemli Uzman',
       title: 'Merhaba, ben Emre.',
-      subtitle: 'Akkim’de Kıdemli Uzman olarak çalışıyorum. Saha verilerinden ERP akışlarına, veri analitiğinden on-premise yerel LLM ve chatbot çözümlerine uzanan uçtan uca dijital dönüşüm süreçlerine odaklanıyorum.',
+      subtitle: 'Akkim’de Kıdemli Uzman olarak çalışıyorum. Saha verilerinden ERP süreçlerine, veri analitiğinden yerel LLM ve chatbot uygulamalarına kadar farklı alanlarda çalışmalar yapıyorum.',
       primaryCta: 'Deneyimimi incele',
       secondaryCta: 'İletişime geç',
       available: 'Kendi Linux sunucumda yayında',
@@ -13,9 +13,9 @@ export const translations = {
     },
     about: {
       eyebrow: 'Kısaca ben',
-      title: 'Saha tecrübesi, veri hakimiyeti ve teknoloji tutkusuyla değer yaratan bir vizyon.',
-      p1: 'Kariyerim boyunca sahadaki üretim otomasyonundan Canias ERP akışlarına, iş emirleri ve sipariş numaraları eşleştirmesinden ürün maliyetlendirme formüllerine kadar uçtan uca tüm operasyonu bizzat deneyimledim. SIRI dijital olgunluk ölçümlerinden Tableau ile 300+ stratejik rapora, TPM iyileştirmelerinden IT altyapılarına uzanarak üretim, IT, kalite ve yönetim departmanları arasında sağlam bir köprü kurdum.',
-      p2: 'Bugün Akkim bünyesinde bu birikimi Microsoft ekosistemi, Linux tabanlı NVIDIA GPU sistemleri ve on-premise yerel LLM chatbot mimarileriyle geleceğe taşıyorum. Özel bilgisayar sistemleri toplamak, ince BIOS ayarlarıyla voltaj/frekans eğrilerinde kusursuz "sweet spot"u aramak, overclock ve kendi Linux sunucumda çözümler üretmek günlük yaşamımın bir parçası.',
+      title: 'Saha deneyimi, veri çalışmaları ve teknolojiye duyulan doğal merak.',
+      p1: 'Kariyerim boyunca sahadaki otomasyondan Canias ERP süreçlerine, iş emirleri ve sipariş numarası eşleşmelerinden ürün maliyetlendirme formüllerine kadar pek çok aşamada yer aldım. SIRI dijital olgunluk ölçümleri, Tableau raporlamaları, TPM çalışmaları ve IT süreçleriyle üretim, IT, kalite ve yönetim birimleri arasında koordinasyon sağladım.',
+      p2: 'Akkim’de Microsoft ekosistemi, Linux tabanlı NVIDIA GPU sistemleri ve yerel LLM / chatbot uygulamaları üzerinde çalışıyorum. İş dışında özel sistemler toplamak, ince BIOS voltaj/frekans ayarlarıyla stabil bir denge (sweet spot) yakalamak ve kendi Linux sunucumda denemeler yapmak keyif aldığım uğraşlar.',
       stats: [
         { value: '300+', label: 'Tableau raporu' },
         { value: '200+', label: 'Özel toplanan bilgisayar' },
@@ -40,11 +40,11 @@ export const translations = {
           date: 'Şubat 2026 — Halen',
           logo: '/logos/akkim.png',
           bullets: [
-            'İş birimlerinin analitik ihtiyaçlarına yönelik Tableau üzerinde gelişmiş dashboard ve raporlama mimarileri tasarlıyorum.',
-            'Uçtan uca iş süreçlerini analiz ederek dijital dönüşüm ve süreç iyileştirme çalışmalarına liderlik ediyorum.',
-            'Yapay zekâ iş yükleri için Linux tabanlı ve NVIDIA GPU ivmelendirmeli sunucu altyapılarının kurulum, yapılandırma ve performans optimizasyonunu yürütüyorum.',
-            'Açık kaynaklı yerel LLM (Büyük Dil Modelleri) ve RAG mimarilerini kurum bünyesinde on-premise olarak çalıştırarak veriye özel güvenli chatbot çözümleri geliştiriyorum.',
-            'Copilot Studio ve Microsoft 365 ekosisteminde kurumsal yapay zekâ asistanı kullanım senaryoları kurguluyor, kullanıcı desteği sağlıyorum.',
+            'İş birimlerinin analitik ihtiyaçlarına yönelik Tableau üzerinde dashboard ve raporlama çözümleri geliştiriyorum.',
+            'İş süreçlerini analiz ederek süreç iyileştirme ve dijital dönüşüm çalışmalarında görev alıyorum.',
+            'Yapay zekâ iş yükleri için Linux tabanlı ve NVIDIA GPU ivmelendirmeli sunucu sistemlerinin kurulum ve yapılandırma süreçlerini yürütüyorum.',
+            'Açık kaynaklı yerel LLM (Büyük Dil Modelleri) ve RAG mimarilerini inceleyerek kurumsal ihtiyaçlara özel chatbot çözümleri kurguluyorum.',
+            'Copilot Studio ve Microsoft 365 tarafında yapay zekâ asistanı kullanım senaryoları çalışıyor ve kullanıcı desteği veriyorum.',
           ],
         },
         {
@@ -54,12 +54,12 @@ export const translations = {
           date: '2021 — 2026',
           logo: '/logos/yunsa-cropped.png',
           bullets: [
-            'Uçtan Uca Saha-ERP Entegrasyonu: Üretim sahasındaki otomasyon, MES ve RFID verilerini iş emirleri ve sipariş numaralarıyla Canias ERP akışlarına tam entegre hale getirdim.',
-            'Ürün Maliyetlendirme & Kârlılık: Üretim formüllerinin sisteme tanımlanması, saha verilerinin işlenmesi, maliyet projeleri ve operasyonel kârlılık analizlerini yönettim.',
-            'Tableau Raporlama: Satış analitiği, üretim ve üst yönetim kararları için 300’ün üzerinde interaktif rapor geliştirdim.',
-            'SIRI & TPM Dijital Dönüşüm: SIRI (Smart Industry Readiness Index) dijital olgunluk ölçümlerinde görev aldım; FI Komitesi üyesi olarak operasyonel verimlilik projelerini yürüttüm.',
-            'Çoklu Departman Köprüsü: Üretim, IT, planlama, kalite ve mali işler arasında süreç tasarımı, mobil uygulama analizi ve entegrasyon köprüsü kurdum.',
-            'Teknik sorumluluklarımın yanı sıra kurum içi etkinliklerde sunuculuk üstlendim ve oryantasyon eğitimlerini verdim.',
+            'Saha & ERP Entegrasyonu: Üretim sahasındaki otomasyon, MES ve RFID verilerini iş emirleri ve sipariş numaralarıyla Canias ERP akışlarına bağlama süreçlerinde yer aldım.',
+            'Ürün Maliyetlendirme & Kârlılık: Üretim formüllerinin sisteme tanımlanması, saha verilerinin işlenmesi, maliyet projeleri ve kârlılık analizleri.',
+            'Tableau Raporlama: Satış, üretim ve yönetim kararları için 300’ün üzerinde interaktif rapor hazırladım.',
+            'SIRI & TPM Çalışmaları: SIRI (Smart Industry Readiness Index) dijital olgunluk ölçümlerinde görev aldım; FI Komitesi üyesi olarak operasyonel verimlilik çalışmalarına katıldım.',
+            'Departmanlar Arası İletişim: Üretim, IT, planlama, kalite ve mali işler arasında süreç tasarımı, mobil uygulama analizi ve entegrasyon desteği sağladım.',
+            'Teknik görevlerimin yanı sıra kurum içi etkinliklerde sunuculuk yaptım ve oryantasyon eğitimlerine katıldım.',
           ],
         },
         {
@@ -69,7 +69,7 @@ export const translations = {
           date: '2018 — 2019',
           logo: '',
           bullets: [
-            'Amatör lig karşılaşmalarında hakemlik yaparak yüksek baskı altında hızlı karar alma, saha yönetimi ve kriz tecrübesi edindim.',
+            'Amatör lig karşılaşmalarında hakemlik yaparak karar alma, saha yönetimi ve iletişim tecrübesi edindim.',
           ],
         },
       ],
@@ -92,10 +92,10 @@ export const translations = {
       eyebrow: 'Kişisel galeri',
       title: 'Boş zamanlarımda neler yapıyorum?',
       items: [
-        { number: '01', type: 'hardware', metric: '200+', title: 'Bilgisayar toplama & overclock', tag: 'İnce BIOS & Overclock', desc: '200’ün üzerinde sistem topladım. Sadece montaj değil; ince BIOS voltaj/frekans eğrileriyle kusursuz "sweet spot" kararlılığını yakalama, RAM sub-timing ayarları ve termal optimizasyon ile donanımın sınırlarını zorlamak en büyük hobim.' },
-        { number: '02', type: 'server', metric: '7/24', title: 'Pi sunucum', tag: 'Linux & Self-hosting', desc: 'Kendi Raspberry Pi sunucumu yönetiyor; Linux, ağ servisleri, güvenli uzaktan erişim, yedekleme ve self-hosted uygulamalar üzerinde çalışıyorum.' },
-        { number: '03', type: 'sports', metric: '#1', title: 'Spor ve turnuvalar', tag: 'Takım ruhu', desc: 'Farklı spor branşlarında ve turnuvalarda aktif rol aldım. Kazandığım basketbol smaç yarışması birinciliği bu alandaki tutkumun bir yansımasıdır.' },
-        { number: '04', type: 'ai', metric: 'LLM', title: 'Yerel LLM & Chatbot', tag: 'Langflow & RAG', desc: 'Açık kaynaklı yerel LLM modellerini (Ollama, Langflow) çalıştırıyor, veri gizliliğine önem veren RAG altyapıları ve özelleştirilmiş akıllı chatbot asistanları kurguluyorum.' },
+        { number: '01', type: 'hardware', metric: '200+', title: 'Bilgisayar toplama & overclock', tag: 'İnce BIOS & Overclock', desc: '200’ün üzerinde sistem topladım. Sadece montaj değil; ince BIOS voltaj/frekans ayarlarıyla ideal kararlılık dengesini (sweet spot) aramak, RAM sub-timing düzenlemeleri ve termal optimizasyon ile ilgilenmek en büyük hobilerimden biri.' },
+        { number: '02', type: 'server', metric: '7/24', title: 'Pi sunucum', tag: 'Linux & Self-hosting', desc: 'Kendi Raspberry Pi sunucumu yönetiyor; Linux, ağ servisleri, güvenli uzaktan erişim, yedekleme ve self-hosted uygulamalar üzerine çalışıyorum.' },
+        { number: '03', type: 'sports', metric: '#1', title: 'Spor ve turnuvalar', tag: 'Takım ruhu', desc: 'Farklı spor branşlarında yer aldım. Kazandığım basketbol smaç yarışması birinciliği sporla geçen yıllarımın güzel bir anısı.' },
+        { number: '04', type: 'ai', metric: 'LLM', title: 'Yerel LLM & Chatbot', tag: 'Langflow & RAG', desc: 'Açık kaynaklı yerel LLM modellerini (Ollama, Langflow) inceliyor, RAG altyapıları ve özelleştirilmiş chatbot denemeleri kurguluyorum.' },
       ],
     },
     sports: {
@@ -113,7 +113,7 @@ export const translations = {
       filterVideos: 'Videolar',
       filterDunk: 'Smaç Yarışması',
       items: [
-        { id: 1, type: 'video', category: 'dunk', title: 'Smaç Performansı', tag: 'Smaç Yarışması', src: '/media/VID-20250522-WA0001.mp4', caption: 'Smaç yarışmasında sergilediğim yüksek patlayıcılığa sahip smaç gösterisi.' },
+        { id: 1, type: 'video', category: 'dunk', title: 'Smaç Performansı', tag: 'Smaç Yarışması', src: '/media/VID-20250522-WA0001.mp4', caption: 'Smaç yarışmasında sergilediğim smaç gösterisi.' },
         { id: 2, type: 'image', category: 'dunk', title: 'Smaç Yarışması Anı', tag: 'Smaç & Şampiyonluk', src: '/media/TJUW9403.JPG', caption: 'Smaç yarışmasında yakalanan aksiyon ve smaç anı karesi.' },
         { id: 3, type: 'video', category: 'dunk', title: 'Smaç Yarışması Final Smaçları', tag: 'Basketbol & Smaç', src: '/media/WRSY6502.MP4', caption: 'Smaç yarışması final etabındaki smaç performansı.' },
         { id: 4, type: 'image', category: 'sports', title: 'Turnuva Mücadelesi', tag: 'Takım Sporları', src: '/media/BATQ7656.JPG', caption: 'Katıldığım spor turnuvaları ve maç içi çekimler.' },
@@ -131,7 +131,7 @@ export const translations = {
     hero: {
       eyebrow: 'Computer Engineer · Senior Specialist',
       title: 'Hi, I’m Emre.',
-      subtitle: 'I work as a Senior Specialist at Akkim, focusing on end-to-end digital transformation—spanning shop-floor data to ERP flows, data analytics, and on-premise local LLM & chatbot solutions.',
+      subtitle: 'I work as a Senior Specialist at Akkim, focusing on data analytics, process development, local LLM infrastructure, and chatbot applications.',
       primaryCta: 'View my experience',
       secondaryCta: 'Get in touch',
       available: 'Hosted on my own Linux server',
@@ -140,9 +140,9 @@ export const translations = {
     },
     about: {
       eyebrow: 'About me',
-      title: 'A vision powered by field experience, data mastery, and a passion for technology.',
-      p1: 'Throughout my career, I have personally managed end-to-end operations from manufacturing shop-floor automation and Canias ERP flows to work-order/purchase-order mapping and product costing formulas. Ranging from SIRI digital maturity assessments and 300+ Tableau reports to TPM improvements and IT infrastructure, I have built strong bridges across production, IT, quality, and executive management.',
-      p2: 'At Akkim today, I carry this experience into the future with the Microsoft ecosystem, Linux-based NVIDIA GPU systems, and on-premise local LLM chatbot architectures. Custom PC building, fine-tuning BIOS settings to hunt the ultimate voltage/frequency "sweet spot", overclocking, and hosting applications on my Linux server are integral parts of my daily life.',
+      title: 'Field experience, data work, and a genuine curiosity for technology.',
+      p1: 'Throughout my career, I have worked across shop-floor automation, Canias ERP workflows, work order mappings, and product costing formulas. Ranging from SIRI digital maturity assessments and Tableau reporting to TPM practices, I have supported coordination across production, IT, quality, and management teams.',
+      p2: 'At Akkim today, I work with the Microsoft ecosystem, Linux-based NVIDIA GPU setups, and local LLM / chatbot applications. Outside work, building custom PC rigs, tuning BIOS voltage/frequency curves to find a stable "sweet spot", overclocking, and managing my Linux server are hobbies I genuinely enjoy.',
       stats: [
         { value: '300+', label: 'Tableau reports' },
         { value: '200+', label: 'Custom PC builds' },
@@ -167,11 +167,11 @@ export const translations = {
           date: 'February 2026 — Present',
           logo: '/logos/akkim.png',
           bullets: [
-            'Design advanced Tableau dashboard architectures and analytics solutions tailored to enterprise reporting needs.',
-            'Analyze end-to-end business processes to lead digital transformation and process optimization initiatives.',
-            'Deploy, configure, and optimize Linux-based NVIDIA GPU acceleration server systems for AI workloads.',
-            'Engineered open-source local LLMs (Large Language Models) on-premise, deploying custom RAG-backed secure chatbot solutions.',
-            'Architect enterprise AI assistant use-cases across Copilot Studio and the Microsoft 365 ecosystem while providing end-user support.',
+            'Develop Tableau dashboards and analytics solutions tailored to business reporting needs.',
+            'Participate in process improvement and digital transformation initiatives by analyzing business workflows.',
+            'Set up and configure Linux-based NVIDIA GPU server systems for AI workloads.',
+            'Explore open-source local LLMs and RAG setups to build tailored chatbot solutions.',
+            'Work on Copilot Studio scenarios and assist users across the Microsoft 365 ecosystem.',
           ],
         },
         {
@@ -181,12 +181,12 @@ export const translations = {
           date: '2021 — 2026',
           logo: '/logos/yunsa-cropped.png',
           bullets: [
-            'End-to-End Field-to-ERP Integration: Integrated shop-floor automation, MES, and RFID data seamlessly with Canias ERP workflows, work orders, and purchase order numbers.',
-            'Product Costing & Profitability: Defined manufacturing formulas into systems, processed shop-floor data, and managed costing projects and operational profitability analysis.',
-            'Tableau Analytics: Developed over 300 interactive reports driving sales analytics, production planning, and executive decision-making.',
-            'SIRI & TPM Transformation: Conducted SIRI (Smart Industry Readiness Index) digital maturity evaluations and led operational efficiency projects as an FI Committee member.',
-            'Cross-Departmental Bridge: Created seamless integration and process design bridges across production, IT, planning, quality, and finance teams.',
-            'Alongside technical responsibilities, hosted corporate events and led employee orientation training sessions.',
+            'Field & ERP Integration: Participated in connecting shop-floor automation, MES, and RFID data to Canias ERP workflows, work orders, and purchase orders.',
+            'Product Costing & Profitability: Defined manufacturing formulas into systems, processed shop-floor data, and supported costing projects and profitability analysis.',
+            'Tableau Analytics: Prepared over 300 interactive reports for sales analytics, production planning, and decision support.',
+            'SIRI & TPM Practices: Contributed to SIRI digital maturity evaluations and participated in operational efficiency projects as an FI Committee member.',
+            'Inter-Departmental Support: Supported process design, mobile application analysis, and integration across production, IT, planning, quality, and finance teams.',
+            'Alongside technical responsibilities, hosted corporate events and participated in orientation training sessions.',
           ],
         },
         {
@@ -196,7 +196,7 @@ export const translations = {
           date: '2018 — 2019',
           logo: '',
           bullets: [
-            'Officiated amateur league matches, developing decisive judgment, pitch leadership, and crisis management under pressure.',
+            'Officiated amateur league matches, gaining experience in decision making, pitch management, and communication under pressure.',
           ],
         },
       ],
@@ -219,10 +219,10 @@ export const translations = {
       eyebrow: 'Personal gallery',
       title: 'What do I do in my spare time?',
       items: [
-        { number: '01', type: 'hardware', metric: '200+', title: 'PC building & overclocking', tag: 'Fine BIOS & Overclock', desc: 'Built 200+ custom rigs. Beyond assembly: tuning BIOS voltage/frequency curves to hit the optimal stability "sweet spot", RAM sub-timings, and thermal engineering.' },
+        { number: '01', type: 'hardware', metric: '200+', title: 'PC building & overclocking', tag: 'Fine BIOS & Overclock', desc: 'Built 200+ custom systems. Beyond assembly: tuning BIOS voltage/frequency settings to find a stable balance (sweet spot), RAM sub-timings, and thermal optimization.' },
         { number: '02', type: 'server', metric: '24/7', title: 'My Pi server', tag: 'Linux & Self-hosting', desc: 'Manage my own Raspberry Pi server, running Linux, network services, secure remote access, backups, and self-hosted applications.' },
-        { number: '03', type: 'sports', metric: '#1', title: 'Sports & tournaments', tag: 'Team spirit', desc: 'Actively competed in various sports tournaments. Winning a slam dunk contest remains a highlight of my athletic dedication.' },
-        { number: '04', type: 'ai', metric: 'LLM', title: 'Local LLMs & Chatbots', tag: 'Langflow & RAG', desc: 'Deploy open-source local LLMs (Ollama, Langflow) to build privacy-first RAG architectures and custom conversational AI assistants.' },
+        { number: '03', type: 'sports', metric: '#1', title: 'Sports & tournaments', tag: 'Team spirit', desc: 'Participated in various sports events. Winning a basketball slam dunk contest remains a fond memory from my sports years.' },
+        { number: '04', type: 'ai', metric: 'LLM', title: 'Local LLMs & Chatbots', tag: 'Langflow & RAG', desc: 'Explore open-source local LLMs (Ollama, Langflow) to build privacy-conscious RAG setups and custom chatbot experiments.' },
       ],
     },
     sports: {
@@ -240,7 +240,7 @@ export const translations = {
       filterVideos: 'Videos',
       filterDunk: 'Dunk Contest',
       items: [
-        { id: 1, type: 'video', category: 'dunk', title: 'Slam Dunk Performance', tag: 'Dunk Contest', src: '/media/VID-20250522-WA0001.mp4', caption: 'High-explosiveness slam dunk showcase in the Dunk Contest.' },
+        { id: 1, type: 'video', category: 'dunk', title: 'Slam Dunk Performance', tag: 'Dunk Contest', src: '/media/VID-20250522-WA0001.mp4', caption: 'Slam dunk showcase from the contest.' },
         { id: 2, type: 'image', category: 'dunk', title: 'Dunk Contest Moment', tag: 'Dunk & Victory', src: '/media/TJUW9403.JPG', caption: 'Action shot captured during the Slam Dunk Competition.' },
         { id: 3, type: 'video', category: 'dunk', title: 'Dunk Competition Finals', tag: 'Basketball & Dunk', src: '/media/WRSY6502.MP4', caption: 'Final round dunk performance during the championship.' },
         { id: 4, type: 'image', category: 'sports', title: 'Tournament Match', tag: 'Team Sports', src: '/media/BATQ7656.JPG', caption: 'Photos from competitive sports tournaments and matches.' },
@@ -256,5 +256,6 @@ export const translations = {
 } as const;
 
 export type Language = 'tr' | 'en';
+
 
 
