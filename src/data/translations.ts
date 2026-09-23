@@ -4,7 +4,7 @@ export const translations = {
     hero: {
       eyebrow: 'Bilgisayar Mühendisi · Kıdemli Uzman',
       title: 'Merhaba, ben Emre.',
-      subtitle: 'Akkim’de Kıdemli Uzman olarak çalışıyorum. Veri analitiğinden yerel yapay zekâ altyapısına, kurum içi özel chatbot çözümlerinden süreç geliştirmeye uzanan geniş bir yelpazeye odaklanıyorum.',
+      subtitle: 'Akkim’de Kıdemli Uzman olarak çalışıyorum. Saha verilerinden ERP akışlarına, veri analitiğinden on-premise yerel LLM ve chatbot çözümlerine uzanan uçtan uca dijital dönüşüm süreçlerine odaklanıyorum.',
       primaryCta: 'Deneyimimi incele',
       secondaryCta: 'İletişime geç',
       available: 'Kendi Linux sunucumda yayında',
@@ -13,12 +13,12 @@ export const translations = {
     },
     about: {
       eyebrow: 'Kısaca ben',
-      title: 'Teknolojiye duyulan merak ve iş dünyasında değer yaratan çözümler.',
-      p1: 'Kariyerim boyunca otomasyon, ERP, ürün maliyetlendirme, satış analitiği, raporlama ve süreç geliştirme gibi hem teknik hem de operasyonel tarafa dokunan kritik görevlerde yer aldım. Bugün Akkim’de bu birikimi Microsoft ekosistemi, yerel LLM mimarileri ve kurum içi yapay zekâ chatbot çözümleriyle harmanlıyorum.',
-      p2: 'Teknolojiyi 2012 yılından bu yana tutkuyla takip ediyorum. Bilgisayar donanımları toplamak, Linux sunucular yönetmek, ağ altyapılarını optimize etmek ve açık kaynaklı yerel yapay zekâ (LLM) modelleriyle özelleştirilmiş chatbot iş akışları geliştirmek günlük yaşamımın ayrılmaz bir parçası. Nitekim bu web sitesi de kendi kişisel Linux sunucumda yayın yapmaktadır.',
+      title: 'Saha tecrübesi, veri hakimiyeti ve teknoloji tutkusuyla değer yaratan bir vizyon.',
+      p1: 'Kariyerim boyunca sahadaki üretim otomasyonundan Canias ERP akışlarına, iş emirleri ve sipariş numaraları eşleştirmesinden ürün maliyetlendirme formüllerine kadar uçtan uca tüm operasyonu bizzat deneyimledim. SIRI dijital olgunluk ölçümlerinden Tableau ile 300+ stratejik rapora, TPM iyileştirmelerinden IT altyapılarına uzanarak üretim, IT, kalite ve yönetim departmanları arasında sağlam bir köprü kurdum.',
+      p2: 'Bugün Akkim bünyesinde bu birikimi Microsoft ekosistemi, Linux tabanlı NVIDIA GPU sistemleri ve on-premise yerel LLM chatbot mimarileriyle geleceğe taşıyorum. 2012’den beri süregelen teknoloji tutkumla; özel bilgisayar sistemleri toplamak, ince BIOS ayarları ve 3DMark testleriyle voltaj/frekans eğrilerinde kusursuz "sweet spot"u aramak ve kendi Linux sunucumda çözümler üretmek günlük yaşamımın bir parçası.',
       stats: [
         { value: '300+', label: 'Tableau raporu' },
-        { value: '200+', label: 'Toplanan bilgisayar' },
+        { value: '200+', label: 'Özel toplanan bilgisayar' },
         { value: '2012', label: 'Teknoloji tutkusunun başlangıcı' },
         { value: '2026', label: 'Akkim başlangıcı' },
       ],
@@ -40,11 +40,11 @@ export const translations = {
           date: 'Şubat 2026 — Halen',
           logo: '/logos/akkim.png',
           bullets: [
-            'İş birimlerinin analitik ihtiyaçlarına yönelik Tableau üzerinde gelişmiş dashboard ve raporlama çözümleri tasarlıyorum.',
-            'İş süreçlerini uçtan uca analiz ederek iyileştirme alanlarını belirliyor ve dijital dönüşüm çalışmalarına destek oluyorum.',
-            'Yapay zekâ iş yükleri için Linux tabanlı ve NVIDIA GPU ivmelendirmeli sunucu sistemlerinin kurulum, yapılandırma ve performans optimizasyonunu gerçekleştiriyorum.',
-            'Açık kaynaklı yerel LLM (Büyük Dil Modelleri) ve RAG altyapılarını kurum içinde on-premise olarak çalıştırarak ihtiyaca özel güvenli chatbot çözümleri tasarlıyorum.',
-            'Copilot Studio ve Microsoft 365 ekosistemiyle kurum içi yapay zekâ asistanı kullanım senaryoları geliştiriyor ve kullanıcı desteği sunuyorum.',
+            'İş birimlerinin analitik ihtiyaçlarına yönelik Tableau üzerinde gelişmiş dashboard ve raporlama mimarileri tasarlıyorum.',
+            'Uçtan uca iş süreçlerini analiz ederek dijital dönüşüm ve süreç iyileştirme çalışmalarına liderlik ediyorum.',
+            'Yapay zekâ iş yükleri için Linux tabanlı ve NVIDIA GPU ivmelendirmeli sunucu altyapılarının kurulum, yapılandırma ve performans optimizasyonunu yürütüyorum.',
+            'Açık kaynaklı yerel LLM (Büyük Dil Modelleri) ve RAG mimarilerini kurum bünyesinde on-premise olarak çalıştırarak veriye özel güvenli chatbot çözümleri geliştiriyorum.',
+            'Copilot Studio ve Microsoft 365 ekosisteminde kurumsal yapay zekâ asistanı kullanım senaryoları kurguluyor, kullanıcı desteği sağlıyorum.',
           ],
         },
         {
@@ -54,12 +54,12 @@ export const translations = {
           date: '2021 — 2026',
           logo: '/logos/yunsa-cropped.png',
           bullets: [
-            'Canias ERP üzerinde ürün maliyetlendirme süreçleri, maliyet projeleri ve operasyonel kârlılık analizlerini yönettim.',
-            'Tableau’da 300’ün üzerinde rapor geliştirerek satış analitiği ve farklı iş birimlerinin stratejik karar alma süreçlerine katkı sağladım.',
-            'Otomasyon, MES–ERP entegrasyonları ve saha verilerinin dijital sistemlere aktarılması süreçlerinde aktif rol aldım.',
-            'FI Komitesi üyesi olarak TPM metodolojisiyle operasyonel verimlilik ve süreç iyileştirme projelerini yürüttüm.',
-            'Mobil uygulama projelerinde iş gereksinimlerinin analiz edilmesi ve süreç tasarımı çalışmalarında görev aldım.',
-            'Teknik sorumluluklarımın yanı sıra kurum içi etkinliklerde sunuculuk üstlendim ve oryantasyon eğitimlerine liderlik ettim.',
+            'Uçtan Uca Saha-ERP Entegrasyonu: Üretim sahasındaki otomasyon, MES ve RFID verilerini iş emirleri ve sipariş numaralarıyla Canias ERP akışlarına tam entegre hale getirdim.',
+            'Ürün Maliyetlendirme & Kârlılık: Üretim formüllerinin sisteme tanımlanması, saha verilerinin işlenmesi, maliyet projeleri ve operasyonel kârlılık analizlerini yönettim.',
+            'Tableau Raporlama: Satış analitiği, üretim ve üst yönetim kararları için 300’ün üzerinde interaktif rapor geliştirdim.',
+            'SIRI & TPM Dijital Dönüşüm: SIRI (Smart Industry Readiness Index) dijital olgunluk ölçümlerinde görev aldım; FI Komitesi üyesi olarak operasyonel verimlilik projelerini yürüttüm.',
+            'Çoklu Departman Köprüsü: Üretim, IT, planlama, kalite ve mali işler arasında süreç tasarımı, mobil uygulama analizi ve entegrasyon köprüsü kurdum.',
+            'Teknik sorumluluklarımın yanı sıra kurum içi etkinliklerde sunuculuk üstlendim ve oryantasyon eğitimlerini verdim.',
           ],
         },
         {
@@ -69,7 +69,7 @@ export const translations = {
           date: '2018 — 2019',
           logo: '',
           bullets: [
-            'Amatör lig karşılaşmalarında hakemlik yaparak yüksek baskı altında hızlı karar alma ve kriz yönetimi tecrübesi edindim.',
+            'Amatör lig karşılaşmalarında hakemlik yaparak yüksek baskı altında hızlı karar alma, saha yönetimi ve kriz tecrübesi edindim.',
           ],
         },
       ],
@@ -81,18 +81,18 @@ export const translations = {
         'Liderlik & Tasarım Odaklı Düşünce · 2021',
       ],
       skillGroups: [
-        { title: 'Veri & süreç', skills: ['Tableau', 'T-SQL', 'Raporlama', 'Veri Görselleştirme', 'Süreç Analizi', 'Süreç Geliştirme'] },
-        { title: 'Yapay zekâ & LLM altyapısı', skills: ['Linux', 'NVIDIA GPU Sistemleri', 'Yerel LLM Modelleri', 'Özel Chatbot', 'RAG Altyapısı', 'Langflow', 'Ollama'] },
-        { title: 'Microsoft ekosistemi', skills: ['Copilot Studio', 'Microsoft 365', 'AI Asistan Kullanım Senaryoları', 'Kullanıcı Desteği'] },
-        { title: 'ERP & üretim', skills: ['Canias ERP', 'MES', 'RFID', 'Otomasyon', 'TPM', 'Python'] },
-        { title: 'Donanım & self-hosting', skills: ['Custom PC', 'Overclock', 'Undervolt', 'Termal Optimizasyon', 'Sanal Sunucular', 'Ağ Optimizasyonu', 'Ev Sunucusu', 'Donanım Sorun Giderme'] },
+        { title: 'Veri, süreç & dijitalleşme', skills: ['Tableau', 'T-SQL', 'SIRI Dijital Olgunluk', 'Saha-ERP Entegrasyonu', 'İş Emirleri & Akış', 'Süreç Analizi'] },
+        { title: 'Yapay zekâ & LLM altyapısı', skills: ['Linux', 'NVIDIA GPU Sunucuları', 'On-Premise LLM', 'RAG Altyapısı', 'Özel Chatbot Asistanları', 'Langflow', 'Ollama'] },
+        { title: 'Microsoft ekosistemi', skills: ['Copilot Studio', 'Microsoft 365', 'AI Asistan Senaryoları', 'Kullanıcı Desteği'] },
+        { title: 'ERP, maliyet & üretim', skills: ['Canias ERP', 'Ürün Maliyetlendirme Formülleri', 'MES & RFID', 'Otomasyon', 'TPM FI Komitesi', 'Python'] },
+        { title: 'Donanım, overclock & self-hosting', skills: ['Custom PC Build', 'İnce BIOS Ayarları', 'Voltaj/Frekans Sweet Spot', '3DMark Benchmark', 'RAM Sub-timing', 'Ev Sunucusu (Self-Hosting)'] },
       ],
     },
     hobbies: {
       eyebrow: 'Kişisel galeri',
       title: 'Boş zamanlarımda neler yapıyorum?',
       items: [
-        { number: '01', type: 'hardware', metric: '200+', title: 'Bilgisayar toplama', tag: 'Donanım', desc: 'Farklı bütçe ve kullanım senaryolarına özel 200’ün üzerinde bilgisayar topladım. Parça uyumluluğu, termal optimizasyon, sistem kararlılığı, overclock ve undervolt konularında uzmanlaştım.' },
+        { number: '01', type: 'hardware', metric: '200+', title: 'Bilgisayar toplama & overclock', tag: 'İnce BIOS & 3DMark', desc: '200’ün üzerinde sistem topladım. Sadece montaj değil; ince BIOS voltaj/frekans eğrileriyle kusursuz "sweet spot"u yakalama, RAM sub-timing ayarları, termal optimizasyon ve 3DMark kararlılık testleriyle donanımın sınırlarını zorlamak en büyük hobim.' },
         { number: '02', type: 'server', metric: '7/24', title: 'Pi sunucum', tag: 'Linux & Self-hosting', desc: 'Kendi Raspberry Pi sunucumu yönetiyor; Linux, ağ servisleri, güvenli uzaktan erişim, yedekleme ve self-hosted uygulamalar üzerinde çalışıyorum.' },
         { number: '03', type: 'sports', metric: '#1', title: 'Spor ve turnuvalar', tag: 'Takım ruhu', desc: 'Farklı spor branşlarında ve turnuvalarda aktif rol aldım. Kazandığım basketbol smaç yarışması birinciliği bu alandaki tutkumun bir yansımasıdır.' },
         { number: '04', type: 'ai', metric: 'LLM', title: 'Yerel LLM & Chatbot', tag: 'Langflow & RAG', desc: 'Açık kaynaklı yerel LLM modellerini (Ollama, Langflow) çalıştırıyor, veri gizliliğine önem veren RAG altyapıları ve özelleştirilmiş akıllı chatbot asistanları kurguluyorum.' },
@@ -131,7 +131,7 @@ export const translations = {
     hero: {
       eyebrow: 'Computer Engineer · Senior Specialist',
       title: 'Hi, I’m Emre.',
-      subtitle: 'I work as a Senior Specialist at Akkim, focusing on data analytics, local LLM infrastructure, enterprise chatbot solutions, and business process optimization.',
+      subtitle: 'I work as a Senior Specialist at Akkim, focusing on end-to-end digital transformation—spanning shop-floor data to ERP flows, data analytics, and on-premise local LLM & chatbot solutions.',
       primaryCta: 'View my experience',
       secondaryCta: 'Get in touch',
       available: 'Hosted on my own Linux server',
@@ -140,9 +140,9 @@ export const translations = {
     },
     about: {
       eyebrow: 'About me',
-      title: 'A passion for technology combined with impactful business solutions.',
-      p1: 'Throughout my career, I have worked across automation, ERP, product costing, sales analytics, reporting, and process development—areas bridging technical execution with strategic management. At Akkim, I now combine this experience with the Microsoft ecosystem, local LLM architectures, and enterprise AI chatbot solutions.',
-      p2: 'I have passionately followed technology since 2012. Building custom PC rigs, managing Linux servers, optimizing network infrastructure, and deploying custom chatbot workflows using open-source local LLMs are all part of my daily routine. This website also runs on my own personal Linux server.',
+      title: 'A vision powered by field experience, data mastery, and a passion for technology.',
+      p1: 'Throughout my career, I have personally managed end-to-end operations from manufacturing shop-floor automation and Canias ERP flows to work-order/purchase-order mapping and product costing formulas. Ranging from SIRI digital maturity assessments and 300+ Tableau reports to TPM improvements and IT infrastructure, I have built strong bridges across production, IT, quality, and executive management.',
+      p2: 'At Akkim today, I carry this experience into the future with the Microsoft ecosystem, Linux-based NVIDIA GPU systems, and on-premise local LLM chatbot architectures. Driven by a passion for technology since 2012, custom PC building, fine-tuning BIOS settings and 3DMark benchmarks to hunt the ultimate voltage/frequency "sweet spot", and hosting applications on my Linux server are integral parts of my daily life.',
       stats: [
         { value: '300+', label: 'Tableau reports' },
         { value: '200+', label: 'Custom PC builds' },
@@ -167,11 +167,11 @@ export const translations = {
           date: 'February 2026 — Present',
           logo: '/logos/akkim.png',
           bullets: [
-            'Design advanced Tableau dashboard and analytics solutions tailored to business reporting needs.',
-            'Analyze business processes end-to-end to identify improvement areas and drive digital transformation initiatives.',
-            'Install, configure, and optimize Linux-based NVIDIA GPU acceleration systems for AI workloads.',
-            'Deploy open-source local LLMs (Large Language Models) on-premise, engineering custom RAG-backed secure chatbot solutions.',
-            'Build enterprise AI assistant use-cases and provide user support across Copilot Studio and the Microsoft 365 ecosystem.',
+            'Design advanced Tableau dashboard architectures and analytics solutions tailored to enterprise reporting needs.',
+            'Analyze end-to-end business processes to lead digital transformation and process optimization initiatives.',
+            'Deploy, configure, and optimize Linux-based NVIDIA GPU acceleration server systems for AI workloads.',
+            'Engineered open-source local LLMs (Large Language Models) on-premise, deploying custom RAG-backed secure chatbot solutions.',
+            'Architect enterprise AI assistant use-cases across Copilot Studio and the Microsoft 365 ecosystem while providing end-user support.',
           ],
         },
         {
@@ -181,11 +181,11 @@ export const translations = {
           date: '2021 — 2026',
           logo: '/logos/yunsa-cropped.png',
           bullets: [
-            'Managed product costing processes, costing projects, and operational profitability analysis within Canias ERP.',
-            'Developed over 300 Tableau reports, supporting sales analytics and strategic decision-making across business units.',
-            'Contributed actively to automation, MES–ERP integrations, and the transfer of shop-floor data into digital systems.',
-            'Served as an FI Committee member, leading operational efficiency and process improvement projects via TPM practices.',
-            'Analyzed business requirements and led process design work for mobile application projects.',
+            'End-to-End Field-to-ERP Integration: Integrated shop-floor automation, MES, and RFID data seamlessly with Canias ERP workflows, work orders, and purchase order numbers.',
+            'Product Costing & Profitability: Defined manufacturing formulas into systems, processed shop-floor data, and managed costing projects and operational profitability analysis.',
+            'Tableau Analytics: Developed over 300 interactive reports driving sales analytics, production planning, and executive decision-making.',
+            'SIRI & TPM Transformation: Conducted SIRI (Smart Industry Readiness Index) digital maturity evaluations and led operational efficiency projects as an FI Committee member.',
+            'Cross-Departmental Bridge: Created seamless integration and process design bridges across production, IT, planning, quality, and finance teams.',
             'Alongside technical responsibilities, hosted corporate events and led employee orientation training sessions.',
           ],
         },
@@ -196,7 +196,7 @@ export const translations = {
           date: '2018 — 2019',
           logo: '',
           bullets: [
-            'Officiated amateur league matches, developing decisive judgment and crisis management under high-pressure conditions.',
+            'Officiated amateur league matches, developing decisive judgment, pitch leadership, and crisis management under pressure.',
           ],
         },
       ],
@@ -208,20 +208,20 @@ export const translations = {
         'Leadership & Design Thinking · 2021',
       ],
       skillGroups: [
-        { title: 'Data & process', skills: ['Tableau', 'T-SQL', 'Reporting', 'Data Visualization', 'Process Analysis', 'Process Improvement'] },
-        { title: 'AI & LLM infrastructure', skills: ['Linux', 'NVIDIA GPU Systems', 'Local LLM Models', 'Custom Chatbots', 'RAG Architecture', 'Langflow', 'Ollama'] },
+        { title: 'Data, process & digital transformation', skills: ['Tableau', 'T-SQL', 'SIRI Digital Maturity', 'Field-to-ERP Integration', 'Work Orders & Workflows', 'Process Analysis'] },
+        { title: 'AI & LLM infrastructure', skills: ['Linux', 'NVIDIA GPU Servers', 'On-Premise LLM', 'RAG Architecture', 'Custom Chatbot Assistants', 'Langflow', 'Ollama'] },
         { title: 'Microsoft ecosystem', skills: ['Copilot Studio', 'Microsoft 365', 'AI Assistant Use-Cases', 'User Support'] },
-        { title: 'ERP & manufacturing', skills: ['Canias ERP', 'MES', 'RFID', 'Automation', 'TPM', 'Python'] },
-        { title: 'Hardware & self-hosting', skills: ['Custom PCs', 'Overclocking', 'Undervolting', 'Thermal Optimization', 'Virtual Servers', 'Network Optimization', 'Home Server', 'Hardware Troubleshooting'] },
+        { title: 'ERP, costing & manufacturing', skills: ['Canias ERP', 'Product Costing Formulas', 'MES & RFID', 'Automation', 'TPM FI Committee', 'Python'] },
+        { title: 'Hardware, overclocking & self-hosting', skills: ['Custom PC Builds', 'Advanced BIOS Tuning', 'Voltage/Frequency Sweet Spot', '3DMark Benchmarking', 'RAM Sub-timing', 'Home Server (Self-Hosting)'] },
       ],
     },
     hobbies: {
       eyebrow: 'Personal gallery',
       title: 'What do I do in my spare time?',
       items: [
-        { number: '01', type: 'hardware', metric: '200+', title: 'Building computers', tag: 'Hardware', desc: 'Built over 200 custom PCs for diverse budgets and performance needs. Specialized in component compatibility, thermal optimization, system stability, overclocking, and undervolting.' },
+        { number: '01', type: 'hardware', metric: '200+', title: 'PC building & overclocking', tag: 'Fine BIOS & 3DMark', desc: 'Built 200+ custom rigs. Beyond assembly: tuning BIOS voltage/frequency curves to find the exact stability "sweet spot", RAM sub-timings, thermal engineering, and 3DMark benchmark validation.' },
         { number: '02', type: 'server', metric: '24/7', title: 'My Pi server', tag: 'Linux & Self-hosting', desc: 'Manage my own Raspberry Pi server, running Linux, network services, secure remote access, backups, and self-hosted applications.' },
-        { number: '03', type: 'sports', metric: '#1', title: 'Sports & tournaments', tag: 'Team spirit', desc: 'Actively competed in various sports tournaments. Winning a slam dunk contest remains a highlights of my athletic dedication.' },
+        { number: '03', type: 'sports', metric: '#1', title: 'Sports & tournaments', tag: 'Team spirit', desc: 'Actively competed in various sports tournaments. Winning a slam dunk contest remains a highlight of my athletic dedication.' },
         { number: '04', type: 'ai', metric: 'LLM', title: 'Local LLMs & Chatbots', tag: 'Langflow & RAG', desc: 'Deploy open-source local LLMs (Ollama, Langflow) to build privacy-first RAG architectures and custom conversational AI assistants.' },
       ],
     },
@@ -256,4 +256,5 @@ export const translations = {
 } as const;
 
 export type Language = 'tr' | 'en';
+
 
