@@ -1,11 +1,11 @@
-import { Cpu, Server, Trophy } from 'lucide-react';
+import { Bot, Cpu, Server, Trophy } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
-const icons = {
-  hardware: <Cpu size={30} />,
-  server: <Server size={30} />,
-  sports: <Trophy size={30} />,
-  ai: <Cpu size={30} />,
+const icons: Record<string, React.ReactNode> = {
+  hardware: <Cpu size={28} />,
+  server: <Server size={28} />,
+  sports: <Trophy size={28} />,
+  ai: <Bot size={28} />,
 };
 
 export default function Hobbies() {

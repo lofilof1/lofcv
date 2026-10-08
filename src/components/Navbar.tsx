@@ -47,6 +47,11 @@ export default function Navbar() {
   return (
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
       <nav className="nav container" aria-label="Main navigation">
+        <a href="/" className="wordmark" onClick={(e) => handleNavClick(e, '/')}>
+          <span className="brand-dot" />
+          <span className="brand-text">EMRE LOFÇA</span>
+        </a>
+
         <button
           className="menu-toggle"
           onClick={() => setOpen(!open)}
